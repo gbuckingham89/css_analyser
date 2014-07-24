@@ -1,0 +1,26 @@
+{
+	"name": "gbuckingham89/css_analyser",
+	"version": "1.0.0",
+	"time": "2014-07-24",
+	"type": "library",
+	"description": "A PHP class to analyse a string of CSS to produce statistics.",
+	"keywords": ["CSS","analyser","analyzer","statistics"],
+	"homepage": "http://github.com/gbuckingham89/css_analyser",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "George Buckingham",
+			"email": "george@georgebuckingham.com",
+			"homepage": "http://www.georgebuckingham.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.0.0"
+	},
+    "autoload": {
+        "psr-4": {
+            "gbuckingham89\\": ""
+        }
+    }
+}
