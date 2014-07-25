@@ -8,18 +8,18 @@ A PHP class to analyse a string of CSS to produce statistics. It is able to get 
 - Number of property definitions
 - Size (in bytes)
 
-The class assumes that your CSS is valid - always run your code through a [CSS Lint](http://csslint.net "CSS Lint") tool first. All comments get stripped from the CSS.
+The class assumes that your CSS is valid - always run your code through a [CSS Lint](http://csslint.net "CSS Lint") tool first.
 
-_Yes, analyser is spelt right (with a S not a Z) - I'm British!_
+**You can see a demo of the class in action at: [www.cssanalyser.com](http://www.cssanalyser.com "www.cssanalyser.com").**
 
 ## Installation / Setup
 ### The proper way
 Use [Composer](https://getcomposer.org "Composer") - simply css_analyser to your composer.json file:
 
     {
-    	"require": {
-    		"gbuckingham89/css_analyser": "dev-master"
-    	}
+        "require": {
+            "gbuckingham89/css_analyser": "dev-master"
+        }
     }
 
 ### The other way
@@ -35,7 +35,7 @@ Input CSS and return all of the results as an array:
 
 Or, if you only need one or two or the results, simply call the relevant m ethod:
 
-	$css_string = ".example-css { color: red; }";
+    $css_string = ".example-css { color: red; }";
     $analyser = new \gbuckingham89\css_analyser();
     $analyser->process($css_string, false);
     $number_of_rules = $analyser->get_rules_count();
